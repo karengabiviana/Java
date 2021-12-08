@@ -28,7 +28,7 @@ public class variaveisExercicio1
 				 System.out.println("\nColoque quantos meses você já viveu?");
 				 meses= leia.nextInt();
 				 
-				 //anos
+				 //dias
 				 System.out.println("\nColoque quantos dias você já viveu?");
 				 dias= leia.nextInt();
 				 
