@@ -1,4 +1,4 @@
-package bloco1.POO.Heranca;
+package Heranca;
 
 public class Preguica extends Animal
 {
