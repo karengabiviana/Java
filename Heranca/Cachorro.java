@@ -2,25 +2,24 @@ package Heranca;
 
 public class Cachorro extends Animal 
 {
-	private String correr;
 	
-	public Cachorro(String nome,int idade, String som, String correr)
+	public Cachorro(String nome, int idade)
 	{
-		super(nome,idade,som);
-		this.correr=correr;
+		super(nome, idade);
 	}
-
-	public String getCorrer() {
-		return correr;
+	
+	public void correr() {
+		System.out.println("Zooooom");
 	}
-
-	public void setCorrer(String correr) {
-		this.correr = correr;
+	
+	@Override
+	public void emitirSom() {
+		System.out.println("Au Au");
 	}
 	
 	public void mostrarInfos()
 	{
-		System.out.println("\t\tDados do Cachorro:\nNome:"+getNome()+"\nIdade:"+getIdade()+"\nSom:"+getSom()+"\n"+getCorrer());
+		System.out.println("\n\t\tDados do Cachorro:\nNome:"+getNome()+"\nIdade:"+getIdade());
 	}
 	
 }

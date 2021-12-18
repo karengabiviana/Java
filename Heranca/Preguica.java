@@ -2,24 +2,23 @@ package Heranca;
 
 public class Preguica extends Animal
 {
-	private String subirArvore;
 	
-	public Preguica (String nome,int idade,String som,String subirArvore)
+	public Preguica (String nome,int idade)
 	{
-		super(nome,idade,som);
-		this.subirArvore= subirArvore;
+		super(nome,idade);
 	}
 
-	public String getSubirArvore() {
-		return subirArvore;
+	public void subirArvore() 
+	{
+		System.out.println("A preguiça sobe em árvores!");
 	}
 
-	public void setSubirArvore(String subirArvore) {
-		this.subirArvore = subirArvore;
+	public void emitirSom() {
+		System.out.println("zzzzzzzzzz");
 	}
 	
 	public void mostrarInfos()
 	{
-		System.out.println("\t\tDados da Preguiça:\nNome:"+getNome()+"\nIdade:"+getIdade()+"\nSom:"+getSom()+"\n"+getSubirArvore());
+		System.out.println("\n\t\tDados da Preguiça:\nNome:"+getNome()+"\nIdade:"+getIdade());
 	}
 }
